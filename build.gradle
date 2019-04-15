@@ -11,6 +11,13 @@ repositories {
     mavenCentral()
 }
 
+ext {
+    jUnitVersion = '4.12'
+    reactorVersion = '3.2.8.RELEASE'
+}
+
 dependencies {
-    testCompile group: 'junit', name: 'junit', version: '4.12'
+    compile("io.projectreactor:reactor-core:${reactorVersion}")
+    testCompile("junit:junit:${jUnitVersion}")
+    testCompile("io.projectreactor:reactor-test:${reactorVersion}")
 }
