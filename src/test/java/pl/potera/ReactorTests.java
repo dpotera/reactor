@@ -2,7 +2,6 @@ package pl.potera;
 
 import org.junit.Test;
 import reactor.core.publisher.Flux;
-import reactor.core.publisher.Mono;
 import reactor.test.StepVerifier;
 
 import java.time.Duration;
@@ -46,6 +45,36 @@ public class ReactorTests {
                 .expectNext(2L)
                 .expectNext(3L)
                 .expectNext(4L)
+                .verifyComplete();
+    }
+
+    @Test
+    public void mergeFluxesTest() {
+        Flux<String> firstFlux = Flux.just("one", "two", "three")
+                .delayElements(Duration.ofMillis(100));
+        Flux<String> secondFlux = Flux.just("jeden", "dwa", "trzy")
+                .delayElements(Duration.ofMillis(100))
+                .delaySubscription(Duration.ofMillis(50));
+
+
+        Flux<String> mergedFlux = Flux.merge(firstFlux, secondFlux);
+
+        StepVerifier.create(mergedFlux)
+                .expectNext("one")
+                .expectNext("jeden")
+                .expectNext("two")
+                .expectNext("dwa")
+                .expectNext("three")
+                .expectNext("trzy")
+                .verifyComplete();
+
+
+        Flux<String> zippedFluxes = Flux.zip(firstFlux, secondFlux, (first, second) -> first + " = " + second);
+
+        StepVerifier.create(zippedFluxes)
+                .expectNext("one = jeden")
+                .expectNext("two = dwa")
+                .expectNext("three = trzy")
                 .verifyComplete();
     }
 }
