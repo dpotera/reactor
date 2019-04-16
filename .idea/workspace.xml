@@ -2,8 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="358d3846-cbf9-4c47-9009-5e5339ea586c" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/pl/potera/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/pl/potera/ReactorTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pl/potera/ReactorTests.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/.gradle/" />
@@ -24,11 +23,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/pl/potera/ReactorTests.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="418">
-              <caret line="22" column="34" lean-forward="true" selection-start-line="22" selection-start-column="34" selection-end-line="22" selection-end-column="34" />
+            <state relative-caret-position="429">
+              <caret line="53" column="68" selection-start-line="53" selection-start-column="68" selection-end-line="53" selection-end-column="68" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -36,7 +35,7 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/pl/potera/Main.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="361">
@@ -97,8 +96,8 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/build.gradle" />
-        <option value="$PROJECT_DIR$/src/test/java/pl/potera/ReactorTests.java" />
         <option value="$PROJECT_DIR$/src/main/java/pl/potera/Main.java" />
+        <option value="$PROJECT_DIR$/src/test/java/pl/potera/ReactorTests.java" />
       </list>
     </option>
   </component>
@@ -196,7 +195,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.ReactorTests">
+  <component name="RunManager" selected="JUnit.ReactorTests.zipFluxesTest">
     <configuration default="true" type="Applet">
       <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
       <method v="2">
@@ -284,6 +283,23 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="ReactorTests.zipFluxesTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="reactor_test" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="pl.potera.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="pl.potera" />
+      <option name="MAIN_CLASS_NAME" value="pl.potera.ReactorTests" />
+      <option name="METHOD_NAME" value="zipFluxesTest" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration default="true" type="JUnit" factoryName="JUnit">
       <option name="TEST_OBJECT" value="class" />
       <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
@@ -305,9 +321,11 @@
       <item itemvalue="Gradle.ReactorTests" />
       <item itemvalue="JUnit.ReactorTests" />
       <item itemvalue="JUnit.ReactorTests.intervalFluxTest" />
+      <item itemvalue="JUnit.ReactorTests.zipFluxesTest" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.ReactorTests.zipFluxesTest" />
         <item itemvalue="JUnit.ReactorTests" />
         <item itemvalue="Gradle.ReactorTests" />
         <item itemvalue="Gradle.ReactorTests.mergeFluxesTest" />
@@ -327,7 +345,7 @@
       <updated>1555363972589</updated>
       <workItem from="1555363977109" duration="3163000" />
       <workItem from="1555445759301" duration="1886000" />
-      <workItem from="1555450814157" duration="1751000" />
+      <workItem from="1555450814157" duration="2451000" />
     </task>
     <servers />
   </component>
@@ -364,7 +382,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="6800000" />
+    <option name="totallyTimeSpent" value="7500000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="49" y="0" width="1872" height="1053" extended-state="6" />
@@ -484,20 +502,20 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/pl/potera/ReactorTests.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="418">
-          <caret line="22" column="34" lean-forward="true" selection-start-line="22" selection-start-column="34" selection-end-line="22" selection-end-column="34" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/pl/potera/Main.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="361">
           <caret line="19" lean-forward="true" selection-start-line="19" selection-end-line="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/pl/potera/ReactorTests.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="429">
+          <caret line="53" column="68" selection-start-line="53" selection-start-column="68" selection-end-line="53" selection-end-column="68" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

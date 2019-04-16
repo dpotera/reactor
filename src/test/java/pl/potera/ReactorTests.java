@@ -67,7 +67,12 @@ public class ReactorTests {
                 .expectNext("three")
                 .expectNext("trzy")
                 .verifyComplete();
+    }
 
+    @Test
+    public void zipFluxesTest() {
+        Flux<String> firstFlux = Flux.just("one", "two", "three");
+        Flux<String> secondFlux = Flux.just("jeden", "dwa", "trzy");
 
         Flux<String> zippedFluxes = Flux.zip(firstFlux, secondFlux, (first, second) -> first + " = " + second);
 
