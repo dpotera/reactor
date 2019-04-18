@@ -82,4 +82,17 @@ public class ReactorTests {
                 .expectNext("three = trzy")
                 .verifyComplete();
     }
+
+    @Test
+    public void firstFluxTest() {
+        Flux<String> fastFlux = Flux.just("fast", "x").delaySubscription(Duration.ofMillis(10));
+        Flux<String> slowFlux = Flux.just("slow", "y").delaySubscription(Duration.ofMillis(500));
+
+        Flux<String> firstFlux = Flux.first(fastFlux, slowFlux);
+
+        StepVerifier.create(firstFlux)
+                .expectNext("fast")
+                .expectNext("x")
+                .verifyComplete();
+    }
 }
