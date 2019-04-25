@@ -128,4 +128,11 @@ public class ReactorTests {
                 .expectNext(4)
                 .verifyComplete();
     }
+
+    @Test
+    public void distinctFluxExample() {
+        Flux<Integer> flux = Flux.just(1, 2, 3, 1, 4, 5, 6, 2).distinct();
+
+        StepVerifier.create(flux).expectNext(1, 2, 3, 4, 5, 6).verifyComplete();
+    }
 }
