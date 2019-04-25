@@ -135,4 +135,17 @@ public class ReactorTests {
 
         StepVerifier.create(flux).expectNext(1, 2, 3, 4, 5, 6).verifyComplete();
     }
+
+    @Test
+    public void mapFlux() {
+        Flux<String> stringFlux = Flux.just("1", "2", "3");
+
+        Flux<Integer> intFlux = stringFlux.map(Integer::parseInt);
+
+        StepVerifier.create(intFlux).expectNext(1, 2, 3).verifyComplete();
+
+        Flux<Long> longFlux = intFlux.map(number -> new Long(number + number));
+
+        StepVerifier.create(longFlux).expectNext(2L, 4L, 6L).verifyComplete();
+    }
 }

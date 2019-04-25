@@ -26,8 +26,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/pl/potera/ReactorTests.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="210">
-              <caret line="127" column="30" selection-start-line="127" selection-start-column="30" selection-end-line="127" selection-end-column="30" />
+            <state relative-caret-position="343">
+              <caret line="146" column="55" selection-start-line="146" selection-start-column="55" selection-end-line="146" selection-end-column="55" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -169,7 +169,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.ReactorTests.distinctFluxExample">
+  <component name="RunManager" selected="JUnit.ReactorTests.mapFlux">
     <configuration default="true" type="Applet">
       <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
       <method v="2">
@@ -178,24 +178,6 @@
     </configuration>
     <configuration default="true" type="Application" factoryName="Application">
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="ReactorTests" type="JUnit" factoryName="JUnit" temporary="true">
-      <module name="reactor_test" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="pl.potera.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="pl.potera" />
-      <option name="MAIN_CLASS_NAME" value="pl.potera.ReactorTests" />
-      <option name="METHOD_NAME" value="mergeFluxesTest" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="PARAMETERS" value="" />
-      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -228,6 +210,23 @@
       <option name="PACKAGE_NAME" value="pl.potera" />
       <option name="MAIN_CLASS_NAME" value="pl.potera.ReactorTests" />
       <option name="METHOD_NAME" value="filterFluxExample" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ReactorTests.mapFlux" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="reactor_test" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="pl.potera.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="pl.potera" />
+      <option name="MAIN_CLASS_NAME" value="pl.potera.ReactorTests" />
+      <option name="METHOD_NAME" value="mapFlux" />
       <option name="TEST_OBJECT" value="method" />
       <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
       <method v="2">
@@ -285,19 +284,19 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="JUnit.ReactorTests" />
       <item itemvalue="JUnit.ReactorTests.zipFluxesTest" />
       <item itemvalue="JUnit.ReactorTests.takeFluxTest" />
       <item itemvalue="JUnit.ReactorTests.filterFluxExample" />
       <item itemvalue="JUnit.ReactorTests.distinctFluxExample" />
+      <item itemvalue="JUnit.ReactorTests.mapFlux" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.ReactorTests.mapFlux" />
         <item itemvalue="JUnit.ReactorTests.distinctFluxExample" />
         <item itemvalue="JUnit.ReactorTests.filterFluxExample" />
         <item itemvalue="JUnit.ReactorTests.takeFluxTest" />
         <item itemvalue="JUnit.ReactorTests.zipFluxesTest" />
-        <item itemvalue="JUnit.ReactorTests" />
       </list>
     </recent_temporary>
   </component>
@@ -314,14 +313,11 @@
       <workItem from="1555363977109" duration="3163000" />
       <workItem from="1555445759301" duration="1886000" />
       <workItem from="1555450814157" duration="2451000" />
-      <workItem from="1556218091346" duration="1558000" />
+      <workItem from="1556218091346" duration="1919000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="ReactorTests_takeFluxTest - 2019.04.25 at 20h 53m 38s.xml">
-      <configuration name="ReactorTests.takeFluxTest" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="ReactorTests_takeFluxTest - 2019.04.25 at 20h 53m 45s.xml">
       <configuration name="ReactorTests.takeFluxTest" configurationId="JUnit" />
     </history-entry>
@@ -349,9 +345,12 @@
     <history-entry file="ReactorTests_distinctFluxExample - 2019.04.25 at 21h 08m 30s.xml">
       <configuration name="ReactorTests.distinctFluxExample" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="ReactorTests_mapFlux - 2019.04.25 at 21h 16m 54s.xml">
+      <configuration name="ReactorTests.mapFlux" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="9058000" />
+    <option name="totallyTimeSpent" value="9419000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="49" y="0" width="1872" height="1053" extended-state="6" />
@@ -487,8 +486,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/pl/potera/ReactorTests.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="127" column="30" selection-start-line="127" selection-start-column="30" selection-end-line="127" selection-end-column="30" />
+        <state relative-caret-position="343">
+          <caret line="146" column="55" selection-start-line="146" selection-start-column="55" selection-end-line="146" selection-end-column="55" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
