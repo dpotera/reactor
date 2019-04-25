@@ -177,6 +177,18 @@ public class ReactorTests {
                 .expectNextMatches(playerList::contains)
                 .verifyComplete();
     }
+
+    @Test
+    public void bufferFlux() {
+        Flux.just("one", "two", "three", "four", "five")
+                .buffer(3)
+                .flatMap(list ->
+                        Flux.fromIterable(list)
+                                .map(String::toUpperCase)
+                                .subscribeOn(Schedulers.parallel())
+                                .log()
+                ).subscribe();
+    }
 }
 
 class Player {
