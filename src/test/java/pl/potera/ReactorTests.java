@@ -95,4 +95,25 @@ public class ReactorTests {
                 .expectNext("x")
                 .verifyComplete();
     }
+
+    @Test
+    public void takeFluxTest() {
+        Flux<String> flux = Flux.just("1", "2", "3", "4", "5").take(3);
+
+        StepVerifier.create(flux)
+                .expectNext("1")
+                .expectNext("2")
+                .expectNext("3")
+                .verifyComplete();
+
+        flux = Flux.just("1", "2", "3", "4", "5")
+                .delayElements(Duration.ofMillis(20))
+                .take(Duration.ofMillis(70));
+
+        StepVerifier.create(flux)
+                .expectNext("1")
+                .expectNext("2")
+                .expectNext("3")
+                .verifyComplete();
+    }
 }
