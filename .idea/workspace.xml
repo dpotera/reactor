@@ -26,8 +26,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/pl/potera/ReactorTests.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="286">
-              <caret line="109" column="53" lean-forward="true" selection-start-line="109" selection-start-column="53" selection-end-line="109" selection-end-column="53" />
+            <state relative-caret-position="476">
+              <caret line="128" column="34" selection-start-line="128" selection-start-column="34" selection-end-line="128" selection-end-column="34" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -195,7 +195,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.ReactorTests.takeFluxTest">
+  <component name="RunManager" selected="JUnit.ReactorTests.filterFluxExample">
     <configuration default="true" type="Applet">
       <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
       <method v="2">
@@ -228,26 +228,6 @@
       <GradleScriptDebugEnabled>false</GradleScriptDebugEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="ReactorTests.mergeFluxesTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="--tests &quot;pl.potera.ReactorTests.mergeFluxesTest&quot;" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value=":cleanTest" />
-            <option value=":test" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <GradleScriptDebugEnabled>false</GradleScriptDebugEnabled>
-      <method v="2" />
-    </configuration>
     <configuration name="ReactorTests" type="JUnit" factoryName="JUnit" temporary="true">
       <module name="reactor_test" />
       <extension name="coverage">
@@ -261,6 +241,23 @@
       <option name="METHOD_NAME" value="mergeFluxesTest" />
       <option name="TEST_OBJECT" value="method" />
       <option name="PARAMETERS" value="" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ReactorTests.filterFluxExample" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="reactor_test" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="pl.potera.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="pl.potera" />
+      <option name="MAIN_CLASS_NAME" value="pl.potera.ReactorTests" />
+      <option name="METHOD_NAME" value="filterFluxExample" />
+      <option name="TEST_OBJECT" value="method" />
       <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -317,19 +314,19 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="Gradle.ReactorTests.mergeFluxesTest" />
       <item itemvalue="Gradle.ReactorTests" />
       <item itemvalue="JUnit.ReactorTests" />
       <item itemvalue="JUnit.ReactorTests.zipFluxesTest" />
       <item itemvalue="JUnit.ReactorTests.takeFluxTest" />
+      <item itemvalue="JUnit.ReactorTests.filterFluxExample" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.ReactorTests.filterFluxExample" />
         <item itemvalue="JUnit.ReactorTests.takeFluxTest" />
         <item itemvalue="JUnit.ReactorTests.zipFluxesTest" />
         <item itemvalue="JUnit.ReactorTests" />
         <item itemvalue="Gradle.ReactorTests" />
-        <item itemvalue="Gradle.ReactorTests.mergeFluxesTest" />
       </list>
     </recent_temporary>
   </component>
@@ -346,7 +343,7 @@
       <workItem from="1555363977109" duration="3163000" />
       <workItem from="1555445759301" duration="1886000" />
       <workItem from="1555450814157" duration="2451000" />
-      <workItem from="1556218091346" duration="771000" />
+      <workItem from="1556218091346" duration="1016000" />
     </task>
     <servers />
   </component>
@@ -383,7 +380,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="8271000" />
+    <option name="totallyTimeSpent" value="8516000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="49" y="0" width="1872" height="1053" extended-state="6" />
@@ -477,8 +474,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/pl/potera/ReactorTests.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="286">
-          <caret line="109" column="53" lean-forward="true" selection-start-line="109" selection-start-column="53" selection-end-line="109" selection-end-column="53" />
+        <state relative-caret-position="476">
+          <caret line="128" column="34" selection-start-line="128" selection-start-column="34" selection-end-line="128" selection-end-column="34" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

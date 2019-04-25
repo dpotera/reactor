@@ -116,4 +116,16 @@ public class ReactorTests {
                 .expectNext("3")
                 .verifyComplete();
     }
+
+    @Test
+    public void filterFluxExample() {
+        Flux<Integer> flux = Flux.range(0, 5)
+                .filter(integer -> integer % 2 == 0);
+
+        StepVerifier.create(flux)
+                .expectNext(0)
+                .expectNext(2)
+                .expectNext(4)
+                .verifyComplete();
+    }
 }
