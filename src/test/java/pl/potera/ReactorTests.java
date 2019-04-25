@@ -2,10 +2,15 @@ package pl.potera;
 
 import org.junit.Test;
 import reactor.core.publisher.Flux;
+import reactor.core.publisher.Mono;
+import reactor.core.scheduler.Scheduler;
+import reactor.core.scheduler.Schedulers;
 import reactor.test.StepVerifier;
 
 import java.time.Duration;
+import java.util.Arrays;
 import java.util.List;
+import java.util.Objects;
 import java.util.stream.Collectors;
 
 public class ReactorTests {
@@ -147,5 +152,48 @@ public class ReactorTests {
         Flux<Long> longFlux = intFlux.map(number -> new Long(number + number));
 
         StepVerifier.create(longFlux).expectNext(2L, 4L, 6L).verifyComplete();
+    }
+
+    @Test
+    public void flatMapExample() {
+        Flux<Player> flux = Flux.just("Adam Kowalski", "Michael Jordan", "Steve Smith")
+                .flatMap(string ->
+                        Mono.just(string)
+                                .map(player -> {
+                                    String[] split = player.split(" ");
+                                    return new Player(split[0], split[1]);
+                                })
+                                .subscribeOn(Schedulers.parallel())
+                );
+
+        List<Player> playerList = Arrays.asList(
+                new Player("Adam", "Kowalski"),
+                new Player("Michael", "Jordan"),
+                new Player("Steve", "Smith")
+        );
+        StepVerifier.create(flux)
+                .expectNextMatches(playerList::contains)
+                .expectNextMatches(playerList::contains)
+                .expectNextMatches(playerList::contains)
+                .verifyComplete();
+    }
+}
+
+class Player {
+    private String name;
+    private String surname;
+
+    Player(String name, String surname) {
+        this.name = name;
+        this.surname = surname;
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        Player player = (Player) o;
+        return Objects.equals(name, player.name) &&
+                Objects.equals(surname, player.surname);
     }
 }
