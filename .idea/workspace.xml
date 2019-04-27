@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="358d3846-cbf9-4c47-9009-5e5339ea586c" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/pl/potera/ReactorTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pl/potera/ReactorTests.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -26,8 +27,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/pl/potera/ReactorTests.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="191">
-              <caret line="186" column="36" lean-forward="true" selection-start-line="186" selection-start-column="36" selection-end-line="186" selection-end-column="36" />
+            <state relative-caret-position="247">
+              <caret line="203" column="72" selection-start-line="203" selection-start-column="72" selection-end-line="203" selection-end-column="72" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -39,7 +40,7 @@
         <entry file="file://$PROJECT_DIR$/.gitignore">
           <provider selected="true" editor-type-id="text-editor">
             <state>
-              <caret column="4" lean-forward="true" selection-start-column="4" selection-end-column="4" />
+              <caret column="4" selection-start-column="4" selection-end-column="4" />
             </state>
           </provider>
         </entry>
@@ -169,7 +170,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.ReactorTests.bufferFlux">
+  <component name="RunManager" selected="JUnit.ReactorTests.logicOperationsFlux">
     <configuration default="true" type="Applet">
       <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
       <method v="2">
@@ -216,23 +217,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ReactorTests.filterFluxExample" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="reactor_test" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="pl.potera.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="pl.potera" />
-      <option name="MAIN_CLASS_NAME" value="pl.potera.ReactorTests" />
-      <option name="METHOD_NAME" value="filterFluxExample" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="ReactorTests.flatMapExample" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="reactor_test" />
       <extension name="coverage">
@@ -244,6 +228,23 @@
       <option name="PACKAGE_NAME" value="pl.potera" />
       <option name="MAIN_CLASS_NAME" value="pl.potera.ReactorTests" />
       <option name="METHOD_NAME" value="flatMapExample" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ReactorTests.logicOperationsFlux" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="reactor_test" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="pl.potera.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="pl.potera" />
+      <option name="MAIN_CLASS_NAME" value="pl.potera.ReactorTests" />
+      <option name="METHOD_NAME" value="logicOperationsFlux" />
       <option name="TEST_OBJECT" value="method" />
       <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
       <method v="2">
@@ -284,19 +285,19 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="JUnit.ReactorTests.filterFluxExample" />
       <item itemvalue="JUnit.ReactorTests.distinctFluxExample" />
       <item itemvalue="JUnit.ReactorTests.mapFlux" />
       <item itemvalue="JUnit.ReactorTests.flatMapExample" />
       <item itemvalue="JUnit.ReactorTests.bufferFlux" />
+      <item itemvalue="JUnit.ReactorTests.logicOperationsFlux" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.ReactorTests.logicOperationsFlux" />
         <item itemvalue="JUnit.ReactorTests.bufferFlux" />
         <item itemvalue="JUnit.ReactorTests.flatMapExample" />
         <item itemvalue="JUnit.ReactorTests.mapFlux" />
         <item itemvalue="JUnit.ReactorTests.distinctFluxExample" />
-        <item itemvalue="JUnit.ReactorTests.filterFluxExample" />
       </list>
     </recent_temporary>
   </component>
@@ -313,17 +314,13 @@
       <workItem from="1555363977109" duration="3163000" />
       <workItem from="1555445759301" duration="1886000" />
       <workItem from="1555450814157" duration="2451000" />
-      <workItem from="1556218091346" duration="4222000" />
+      <workItem from="1556218091346" duration="5308000" />
+      <workItem from="1556314262346" duration="967000" />
+      <workItem from="1556358890508" duration="662000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="ReactorTests_filterFluxExample - 2019.04.25 at 21h 05m 09s.xml">
-      <configuration name="ReactorTests.filterFluxExample" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="ReactorTests_distinctFluxExample - 2019.04.25 at 21h 08m 17s.xml">
-      <configuration name="ReactorTests.distinctFluxExample" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="ReactorTests_distinctFluxExample - 2019.04.25 at 21h 08m 30s.xml">
       <configuration name="ReactorTests.distinctFluxExample" configurationId="JUnit" />
     </history-entry>
@@ -348,15 +345,21 @@
     <history-entry file="ReactorTests_bufferFlux - 2019.04.25 at 21h 50m 30s.xml">
       <configuration name="ReactorTests.bufferFlux" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="ReactorTests_logicOperationsFlux - 2019.04.27 at 11h 57m 06s.xml">
+      <configuration name="ReactorTests.logicOperationsFlux" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="ReactorTests_logicOperationsFlux - 2019.04.27 at 11h 58m 45s.xml">
+      <configuration name="ReactorTests.logicOperationsFlux" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="11722000" />
+    <option name="totallyTimeSpent" value="14437000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="49" y="0" width="1872" height="1053" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.12691467" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.12910284" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -388,6 +391,7 @@
       <window_info anchor="right" id="Palette&#9;" order="8" />
       <window_info anchor="right" id="Theme Preview" order="9" />
       <window_info anchor="right" id="Maven" order="10" />
+      <window_info anchor="right" id="SciView" order="11" />
     </layout>
     <layout-to-restore>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25273523" />
@@ -442,13 +446,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/pl/potera/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="361">
-          <caret line="19" selection-start-line="19" selection-end-line="19" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.reactivestreams/reactive-streams/1.0.2/fb592a3d57b11e71eb7a6211dd12ba824c5dd037/reactive-streams-1.0.2-sources.jar!/org/reactivestreams/Publisher.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="570">
@@ -477,20 +474,27 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/.gitignore">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="4" lean-forward="true" selection-start-column="4" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/pl/potera/ReactorTests.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="191">
-          <caret line="186" column="36" lean-forward="true" selection-start-line="186" selection-start-column="36" selection-end-line="186" selection-end-column="36" />
+        <state relative-caret-position="247">
+          <caret line="203" column="72" selection-start-line="203" selection-start-column="72" selection-end-line="203" selection-end-column="72" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="4" selection-start-column="4" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/pl/potera/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="361">
+          <caret line="19" selection-start-line="19" selection-end-line="19" />
         </state>
       </provider>
     </entry>

@@ -1,5 +1,6 @@
 package pl.potera;
 
+import com.sun.org.apache.xpath.internal.operations.Bool;
 import org.junit.Test;
 import reactor.core.publisher.Flux;
 import reactor.core.publisher.Mono;
@@ -188,6 +189,19 @@ public class ReactorTests {
                                 .subscribeOn(Schedulers.parallel())
                                 .log()
                 ).subscribe();
+    }
+
+    @Test
+    public void logicOperationsFlux() {
+        Flux<String> flux = Flux.just("1", "2", "3", "4");
+
+        Mono<Boolean> allMono = flux.map(Integer::parseInt).all(number -> number > 0);
+
+        StepVerifier.create(allMono).expectNext(true).verifyComplete();
+
+        Mono<Boolean> anyMono = flux.any(value -> value.length() > 1);
+
+        StepVerifier.create(anyMono).expectNext(false).verifyComplete();
     }
 }
 
