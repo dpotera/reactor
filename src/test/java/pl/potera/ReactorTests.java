@@ -195,7 +195,8 @@ public class ReactorTests {
     public void logicOperationsFlux() {
         Flux<String> flux = Flux.just("1", "2", "3", "4");
 
-        Mono<Boolean> allMono = flux.map(Integer::parseInt).all(number -> number > 0);
+        Mono<Boolean> allMono = flux.map(Integer::parseInt)
+                .all(number -> number > 0);
 
         StepVerifier.create(allMono).expectNext(true).verifyComplete();
 
