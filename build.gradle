@@ -1,23 +1,22 @@
 plugins {
-    id 'java'
+	id 'org.springframework.boot' version '2.1.4.RELEASE'
+	id 'java'
 }
 
-group 'pl.potera'
-version '1.0-SNAPSHOT'
+apply plugin: 'io.spring.dependency-management'
 
-sourceCompatibility = 1.8
+group = 'pl.potera'
+version = '0.0.1-SNAPSHOT'
+sourceCompatibility = '12'
 
 repositories {
-    mavenCentral()
-}
-
-ext {
-    jUnitVersion = '4.12'
-    reactorVersion = '3.2.8.RELEASE'
+	mavenCentral()
 }
 
 dependencies {
-    compile("io.projectreactor:reactor-core:${reactorVersion}")
-    testCompile("junit:junit:${jUnitVersion}")
-    testCompile("io.projectreactor:reactor-test:${reactorVersion}")
+	implementation 'org.springframework.boot:spring-boot-starter-data-mongodb-reactive'
+	implementation 'org.springframework.boot:spring-boot-starter-webflux'
+	testImplementation 'org.springframework.boot:spring-boot-starter-test'
+	testImplementation 'de.flapdoodle.embed:de.flapdoodle.embed.mongo'
+	testImplementation 'io.projectreactor:reactor-test'
 }
