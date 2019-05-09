@@ -1,4 +1,4 @@
-package pl.potera;
+package pl.potera.reactor;
 
 import reactor.core.publisher.Mono;
 

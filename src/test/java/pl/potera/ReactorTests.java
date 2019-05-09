@@ -1,10 +1,8 @@
 package pl.potera;
 
-import com.sun.org.apache.xpath.internal.operations.Bool;
 import org.junit.Test;
 import reactor.core.publisher.Flux;
 import reactor.core.publisher.Mono;
-import reactor.core.scheduler.Scheduler;
 import reactor.core.scheduler.Schedulers;
 import reactor.test.StepVerifier;
 
