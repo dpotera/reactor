@@ -2,12 +2,15 @@ package pl.potera.reactor.controller;
 
 import lombok.AllArgsConstructor;
 import org.springframework.http.HttpStatus;
+import org.springframework.http.MediaType;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 import pl.potera.reactor.model.Employee;
 import pl.potera.reactor.repository.EmployeesRepository;
 import reactor.core.publisher.Flux;
 import reactor.core.publisher.Mono;
+
+import java.time.Duration;
 
 @RestController
 @RequestMapping("/employees")
@@ -55,6 +58,12 @@ public class EmployeesController {
                             .then(Mono.just(ResponseEntity.ok().<Void>build()))
                 )
                 .defaultIfEmpty(ResponseEntity.notFound().build());
+    }
+
+    @GetMapping(value = "/interval", produces = MediaType.TEXT_EVENT_STREAM_VALUE)
+    public Flux<Employee> employeesInterval() {
+        return repository.findAll()
+                .delayElements(Duration.ofSeconds(1));
     }
 
 }
