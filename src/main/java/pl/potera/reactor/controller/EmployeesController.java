@@ -12,8 +12,8 @@ import reactor.core.publisher.Mono;
 
 import java.time.Duration;
 
-@RestController
-@RequestMapping("/employees")
+//@RestController
+//@RequestMapping("/employees")
 @AllArgsConstructor
 public class EmployeesController {
 
