@@ -65,5 +65,4 @@ public class EmployeesController {
         return repository.findAll()
                 .delayElements(Duration.ofSeconds(1));
     }
-
 }
