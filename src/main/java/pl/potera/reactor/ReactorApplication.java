@@ -42,8 +42,7 @@ public class ReactorApplication {
 		};
 	}
 
-	@Bean
-	@Primary
+//	@Bean
 	RouterFunction<ServerResponse> router(EmployeeHandler handler) {
 		return route(GET("/employees").and(accept(APPLICATION_JSON)), handler::getAllEmployees)
 				.andRoute(POST("/employees").and(contentType(APPLICATION_JSON)), handler::saveEmployee)
@@ -59,6 +58,7 @@ public class ReactorApplication {
 				nest(accept(APPLICATION_JSON).or(contentType(APPLICATION_JSON)).or(accept(TEXT_EVENT_STREAM)),
 						route(GET("/"), handler::getAllEmployees)
 								.andRoute(method(HttpMethod.POST), handler::saveEmployee)
+								.andRoute(GET("/count"), handler::countEmployees)
 								.andRoute(GET("/interval"), handler::employeesInterval)
 								.andNest(path("/{id}"),
 										route(method(HttpMethod.GET), handler::getEmployee)

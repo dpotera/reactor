@@ -81,4 +81,13 @@ public class EmployeeHandler {
                 .contentType(MediaType.TEXT_EVENT_STREAM)
                 .body(employeeFlux, Employee.class);
     }
+
+    public Mono<ServerResponse> countEmployees(ServerRequest request) {
+        return repository.count()
+                .flatMap(number -> ServerResponse.ok()
+                        .contentType(APPLICATION_JSON)
+                        .body(Mono.just(number), Long.class)
+                )
+                .switchIfEmpty(ServerResponse.notFound().build());
+    }
 }
