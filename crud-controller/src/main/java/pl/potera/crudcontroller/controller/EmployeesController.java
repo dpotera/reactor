@@ -34,6 +34,18 @@ public class EmployeesController {
         return repository.save(employee);
     }
 
+    @PutMapping("{id}")
+    public ResponseEntity<Employee> updateEmployee(@PathVariable String id, @RequestBody Employee employee) {
+        return repository.findById(id)
+                .map(savedEmployee -> {
+                    savedEmployee.setName(employee.getName());
+                    savedEmployee.setPoints(employee.getPoints());
+                    Employee updatedEmployee = repository.save(savedEmployee);
+                    return ResponseEntity.ok().body(updatedEmployee);
+                })
+                .orElseGet(() -> ResponseEntity.notFound().build());
+    }
+
     @GetMapping("/count")
     public Long count() {
         return repository.count();
